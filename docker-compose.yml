@@ -1,0 +1,47 @@
+# Duygu Analizi Gösterge Paneli - Docker Compose
+# Bünyamin Canpolat - 230206063
+# Ostim Teknik Üniversitesi - Bilgisayar Mühendisliği
+#
+# Kullanım: docker-compose up --build
+
+version: '3.8'
+
+services:
+  # Frontend & Backend Container (Streamlit Dashboard)
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentiment-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - sentiment-network
+
+  # Database Container (SQLite volume-based)
+  # Not: SQLite dosya tabanlı olduğu için ayrı container gerektirmez.
+  # Ancak mimari gereksinimi karşılamak için volume ile yönetilir.
+  # PostgreSQL'e geçiş yapılabilir yapıda tasarlanmıştır.
+
+networks:
+  sentiment-network:
+    driver: bridge
+
+volumes:
+  sentiment-data:
+    driver: local

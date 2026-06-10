@@ -1,0 +1,50 @@
+# Duygu Analizi Gosterge Paneli - .gitignore
+# Bunyamin Canpolat - 230206063
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Buyuk veri seti dosyalari (GitHub'a yuklenemez)
+data/raw/train.ft.txt
+data/raw/test.ft.txt
+data/raw/*.tsv
+data/raw/*.csv
+
+# SQLite veritabani (her makinede yeniden olusturulur)
+data/*.db
+
+# Islenmis veri (egitim sirasinda olusturulur)
+data/processed_data.csv
+
+# Model dosyalari (buyuk, egitim sirasinda olusturulur)
+models/*.pkl
+models/*.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+*.log

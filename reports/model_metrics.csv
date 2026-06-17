@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-Score,F1-Weighted,En Iyi
+Logistic Regression,0.8564,0.8564,0.8564,0.8564,0.8564,Hayir
+Naive Bayes,0.8488,0.8493,0.8487,0.8487,0.8487,Hayir
+Linear SVM,0.8592,0.8592,0.8592,0.8592,0.8592,Evet

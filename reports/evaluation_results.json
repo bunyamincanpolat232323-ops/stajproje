@@ -1,0 +1,77 @@
+{
+  "best_model": "Linear SVM",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.8858075040783034,
+      "precision_weighted": 0.8847350314150502,
+      "recall_weighted": 0.8858075040783034,
+      "f1_weighted": 0.8418344570057458,
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          43
+        ],
+        [
+          0,
+          2,
+          26
+        ],
+        [
+          1,
+          0,
+          537
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       0.80      0.09      0.15        47\n        nötr       1.00      0.07      0.13        28\n     pozitif       0.89      1.00      0.94       538\n\n    accuracy                           0.89       613\n   macro avg       0.90      0.38      0.41       613\nweighted avg       0.88      0.89      0.84       613\n"
+    },
+    "Naive Bayes": {
+      "accuracy": 0.8792822185970636,
+      "precision_weighted": 0.8482018147117465,
+      "recall_weighted": 0.8792822185970636,
+      "f1_weighted": 0.8243706409438021,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          46
+        ],
+        [
+          0,
+          0,
+          28
+        ],
+        [
+          0,
+          0,
+          538
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       1.00      0.02      0.04        47\n        nötr       0.00      0.00      0.00        28\n     pozitif       0.88      1.00      0.94       538\n\n    accuracy                           0.88       613\n   macro avg       0.63      0.34      0.33       613\nweighted avg       0.85      0.88      0.82       613\n"
+    },
+    "Linear SVM": {
+      "accuracy": 0.9380097879282219,
+      "precision_weighted": 0.9335164139712522,
+      "recall_weighted": 0.9380097879282219,
+      "f1_weighted": 0.9319204754724245,
+      "confusion_matrix": [
+        [
+          24,
+          1,
+          22
+        ],
+        [
+          2,
+          18,
+          8
+        ],
+        [
+          5,
+          0,
+          533
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       0.77      0.51      0.62        47\n        nötr       0.95      0.64      0.77        28\n     pozitif       0.95      0.99      0.97       538\n\n    accuracy                           0.94       613\n   macro avg       0.89      0.71      0.78       613\nweighted avg       0.93      0.94      0.93       613\n"
+    }
+  }
+}

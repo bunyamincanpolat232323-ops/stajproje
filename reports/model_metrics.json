@@ -1,0 +1,60 @@
+{
+  "best_model": "Linear SVM",
+  "trained_at": "2026-06-19T20:33:54.435578",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.8564,
+      "precision_macro": 0.8563977123781437,
+      "recall_macro": 0.856402502440039,
+      "f1_macro": 0.8563988741671735,
+      "f1_weighted": 0.8564004824997828,
+      "confusion_matrix": [
+        [
+          1067,
+          178
+        ],
+        [
+          181,
+          1074
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       0.85      0.86      0.86      1245\n     pozitif       0.86      0.86      0.86      1255\n\n    accuracy                           0.86      2500\n   macro avg       0.86      0.86      0.86      2500\nweighted avg       0.86      0.86      0.86      2500\n"
+    },
+    "Naive Bayes": {
+      "accuracy": 0.8488,
+      "precision_macro": 0.8493432352946834,
+      "recall_macro": 0.8487207795324725,
+      "f1_macro": 0.8487185742854234,
+      "f1_weighted": 0.8487326132017297,
+      "confusion_matrix": [
+        [
+          1032,
+          213
+        ],
+        [
+          165,
+          1090
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       0.86      0.83      0.85      1245\n     pozitif       0.84      0.87      0.85      1255\n\n    accuracy                           0.85      2500\n   macro avg       0.85      0.85      0.85      2500\nweighted avg       0.85      0.85      0.85      2500\n"
+    },
+    "Linear SVM": {
+      "accuracy": 0.8592,
+      "precision_macro": 0.8592277287929462,
+      "recall_macro": 0.8591817469079506,
+      "f1_macro": 0.8591909882232462,
+      "f1_weighted": 0.8591954941116231,
+      "confusion_matrix": [
+        [
+          1064,
+          181
+        ],
+        [
+          171,
+          1084
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     negatif       0.86      0.85      0.86      1245\n     pozitif       0.86      0.86      0.86      1255\n\n    accuracy                           0.86      2500\n   macro avg       0.86      0.86      0.86      2500\nweighted avg       0.86      0.86      0.86      2500\n"
+    }
+  }
+}
